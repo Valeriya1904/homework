@@ -1,23 +1,56 @@
-function first() {
-    for (let pound = '#'; pound.length <= 7; pound += '#') {
-        console.log(pound)
-    }
-}
-first();
+// number 1
+
+// const uniq = (arr) => {
+//     const res = [];
+
+//     for (let i = 0; i < arr.length; i++) {
+//         if (!res.includes(arr[i])) {
+//             res.push(arr[i]);
+//         }
+//     }
+//     return res;
+// }
+
+// console.log(uniq([1, 2, 3, 3, 3, 4, 5, 5]));
 
 
-for (i = 1; i <= 4; i++) {
-    let k = '#';
-    for (let count = 1; count < 4; count ++)
-    k += ' #'
-    console.log(k);
-    let l = '';
-    for (let count = 0; count < 4; count++)
-    l += ' #';
-    console.log(l);
-}
 
-let num = 0;
-do {
-    num  = prompt("Please enter a number greater than 100")
-} while (num < 100 && num);
+
+// number 2
+
+// let users = [
+//     {name: "Dave", age: 30, id: 1 },
+//     {name: "Ann", age: 19, id: 2 },
+//     {name: "Alex", age: 22, id: 3 },
+// ]
+
+// const find = (arr, callback) => {
+//     for(let i = 0; i < arr.lenght; i++) {
+//         callback(arr[i]);
+//         if (callback (arr[i])) {
+//             return arr[i]
+//         }
+//     }
+// };
+
+// const user = users.find(item => {
+//     return item.id === 1;
+// })
+// console.log(user)
+
+
+
+// number 3
+
+// const reverse = (arr) => {
+//     const res = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         res.push(arr[arr.length - 1 - i]);
+//     }
+//     return res;
+// }
+
+// console.log(reverse([1, 2, 3, 4, 5]));
+
+
+
