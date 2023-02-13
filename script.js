@@ -1,56 +1,8 @@
-// number 1
+const arr = [ 5, 7, [ 4, [2], 8, [1,3], 2 ], [ 9, [] ], 1, 8 ];
 
-// const uniq = (arr) => {
-//     const res = [];
+function treeSum(arr) {
+  return arr.reduce((acc, cur) => acc + (Array.isArray(cur) ? treeSum(cur) : cur), 0)
+}
 
-//     for (let i = 0; i < arr.length; i++) {
-//         if (!res.includes(arr[i])) {
-//             res.push(arr[i]);
-//         }
-//     }
-//     return res;
-// }
-
-// console.log(uniq([1, 2, 3, 3, 3, 4, 5, 5]));
-
-
-
-
-// number 2
-
-// let users = [
-//     {name: "Dave", age: 30, id: 1 },
-//     {name: "Ann", age: 19, id: 2 },
-//     {name: "Alex", age: 22, id: 3 },
-// ]
-
-// const find = (arr, callback) => {
-//     for(let i = 0; i < arr.lenght; i++) {
-//         callback(arr[i]);
-//         if (callback (arr[i])) {
-//             return arr[i]
-//         }
-//     }
-// };
-
-// const user = users.find(item => {
-//     return item.id === 1;
-// })
-// console.log(user)
-
-
-
-// number 3
-
-// const reverse = (arr) => {
-//     const res = [];
-//     for (let i = 0; i < arr.length; i++) {
-//         res.push(arr[arr.length - 1 - i]);
-//     }
-//     return res;
-// }
-
-// console.log(reverse([1, 2, 3, 4, 5]));
-
-
+console.log(treeSum(arr));
 
